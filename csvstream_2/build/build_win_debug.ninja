@@ -1,0 +1,11 @@
+cc_extra_flags = -g
+sing_extra_flags = -g
+ln_extra_libs = -lws2_32
+
+platform = win
+cfg = debug
+
+bin_target = ../../bin/win/app_d.exe
+lib_target = ../../bin/win/csv_d.lib
+
+include ../build_aux.ninja

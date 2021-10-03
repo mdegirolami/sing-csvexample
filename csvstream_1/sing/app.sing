@@ -1,0 +1,35 @@
+requires "sio";
+requires "csv";
+
+public fn singmain(argv [*]string) i32
+{
+    var parser csv.CsvStream;
+    var header [*]string;
+    var row [*]string;
+
+    parser.init("test.csv");
+
+    // print header
+    parser.getHeader(header);
+    sio.print("Header: \n");
+    for (value in header) {
+        sio.print(value + ", ");
+    }
+    sio.print("\n");
+
+    // print all the rows
+    var count = 1;
+    while (parser.getRow(row)) {
+        sio.print("\nrow " + sio.formatInt(count, 5) + " : ");
+        ++count;
+        for (value in row) {
+            sio.print(sio.formatString(value, 20) + ", ");
+        }
+        sio.print("\n");
+    }
+
+    // wait before closing the debug window
+    sio.print("\nPlease press any key");
+    sio.kbdGet();
+    return(0);
+}
