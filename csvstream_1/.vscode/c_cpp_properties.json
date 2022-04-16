@@ -4,7 +4,7 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "c:/Users/degimau/.vscode/extensions/mauriziodegirolami.vscode-sing-0.40.2/sdk/inc",
+                "c:/Users/degimau/.vscode/extensions/mauriziodegirolami.vscode-sing-0.41.0/sdk/inc"
             ],
             "defines": [
                 "_DEBUG",
@@ -22,7 +22,7 @@
                 "${workspaceFolder}/**",
                 "/usr/local/include",
                 "/usr/include",
-                "c:/Users/degimau/.vscode/extensions/mauriziodegirolami.vscode-sing-0.40.2/sdk/inc",
+                "c:/Users/degimau/.vscode/extensions/mauriziodegirolami.vscode-sing-0.41.0/sdk/inc"
             ],
             "defines": [
                 "_DEBUG",

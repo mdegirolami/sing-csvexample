@@ -7,7 +7,7 @@ public fn singmain(argv [*]string) i32
     var header [*]string;
     var row [*]string;
 
-    parser.init("test.csv");
+    _ = parser.init("test.csv");
 
     // print header
     parser.getHeader(header);
@@ -30,6 +30,6 @@ public fn singmain(argv [*]string) i32
 
     // wait before closing the debug window
     sio.print("\nPlease press any key");
-    sio.kbdGet();
+    _ = sio.kbdGet();
     return(0);
 }
